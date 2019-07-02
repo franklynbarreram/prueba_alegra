@@ -9,7 +9,7 @@ services:
       context: ./
       dockerfile: web.dockerfile
     ports:
-      - 8000:80
+      - 8080:80
     links:
       - app
     restart: always
@@ -29,10 +29,10 @@ services:
   mysql:
     image: mysql:5.6
     environment:
-        - "MYSQL_DATABASE=laravel"
-        - "MYSQL_USER=laravel"
-        - "MYSQL_PASSWORD=secret"
-        - "MYSQL_ROOT_PASSWORD=secret"
+        - "MYSQL_DATABASE=prueba_alegra"
+        - "MYSQL_USER=root"
+        - "MYSQL_PASSWORD=barrerasm"
+        - "MYSQL_ROOT_PASSWORD=barrerasm"
     ports:
-          - "33061:3306"
+          - "8086:8086"
 
